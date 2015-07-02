@@ -8,6 +8,12 @@
 
 <!-- this script defines how hello will catch login informaton-->
         <script>
+            hello.init({
+                facebook: 1116902578328507,
+                windows: WINDOWS_CLIENT_ID,
+                google: GOOGLE_CLIENT_ID
+            }, {redirect_uri: 'redirect.html'});
+            
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
                 hello(auth.network).api('/me').then(function(r) {
@@ -21,15 +27,6 @@
                     label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
                 });
             });
-        </script>
-
-<!-- this script is for initializing hello-->
-        <script>
-            hello.init({
-                facebook: 1116902578328507,
-                windows: WINDOWS_CLIENT_ID,
-                google: GOOGLE_CLIENT_ID
-            }, {redirect_uri: 'redirect.html'});
         </script>
     </head>
 
