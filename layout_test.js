@@ -1,0 +1,14 @@
+
+
+        if (!user) { 
+            <p>
+            <a href="/">Home</a> | 
+            <a href="/login">Log In</a>
+            </p>
+         } else { 
+            <p>
+            <a href="/">Home</a> | 
+            <a href="/account">Account</a> | 
+            <a href="/logout">Log Out</a>
+            </p>
+         } 
