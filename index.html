@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
-		<script src='./hello/dist/hello.all.js'></script>
+    <head>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
+        <script src='./hello/dist/hello.all.js'></script>
 
-		<script>
-			hello.on('auth.login', function(auth) {
-				// Call user information, for the given network
-				hello(auth.network).api('/me').then(function(r) {
-					// Inject it into the container
-					var label = document.getElementById('profile_' + auth.network);
-					if (!label) {
-						label = document.createElement('div');
-						label.id = 'profile_' + auth.network;
-						document.getElementById('profile').appendChild(label);
-					}
-					label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
-				});
-			});
-		</script>
+        <script>
+            hello.on('auth.login', function(auth) {
+                // Call user information, for the given network
+                hello(auth.network).api('/me').then(function(r) {
+                    // Inject it into the container
+                    var label = document.getElementById('profile_' + auth.network);
+                    if (!label) {
+                        label = document.createElement('div');
+                        label.id = 'profile_' + auth.network;
+                        document.getElementById('profile').appendChild(label);
+                    }
+                    label.innerHTML = '<img src="' + r.thumbnail + '" /> Hey ' + r.name;
+                });
+            });
+        </script>
 
-		<script>
-			hello.init({
-				facebook: FACEBOOK_CLIENT_ID,
-				windows: WINDOWS_CLIENT_ID,
-				google: GOOGLE_CLIENT_ID
-			}, {redirect_uri: 'redirect.html'});
-		</script>
-	</head>
+        <script>
+            hello.init({
+                facebook: FACEBOOK_CLIENT_ID,
+                windows: WINDOWS_CLIENT_ID,
+                google: GOOGLE_CLIENT_ID
+            }, {redirect_uri: 'redirect.html'});
+        </script>
+    </head>
 
-	<body>
-		<button onclick="hello('windows').login()">
-			Windows Live Test
-		</button>
+    <body>
 
-		<button onclick="hello('facebook').login()">
-			Faceboook Test
-		</button>
-	</body>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1116902578328507',
+              xfbml      : true,
+              version    : 'v2.3'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <button onclick="hello('windows').login()">
+            Windows Live Test
+        </button>
+
+        <button onclick="hello('facebook').login()">
+            Faceboook Test
+        </button>
+        
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
+    </body>
 
 </html>
