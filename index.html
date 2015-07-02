@@ -4,7 +4,9 @@
     <head>
         <link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
         <script src='./hello/dist/hello.all.js'></script>
+        <script type="text/javascript" src="ejs_0.9_alpha_1_production.js"></script>
 
+<!-- this script defines how hello will catch login informaton-->
         <script>
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
@@ -21,6 +23,7 @@
             });
         </script>
 
+<!-- this script is for initializing hello-->
         <script>
             hello.init({
                 facebook: FACEBOOK_CLIENT_ID,
@@ -32,6 +35,7 @@
 
     <body>
 
+<!-- this script is for adding fb likes -->
         <script>
           window.fbAsyncInit = function() {
             FB.init({
@@ -50,6 +54,7 @@
            }(document, 'script', 'facebook-jssdk'));
         </script>
 
+<!-- this div is the test space for hello-->
         <div>
             <div>
                 <button onclick="hello('windows').login()">
@@ -63,12 +68,28 @@
         </div>
         
         
+<!-- fb likes div-->
         <div
           class="fb-like"
           data-share="true"
           data-width="450"
           data-show-faces="true">
         </div>
+        
+        <% if (!user) { %>
+			<p>
+			<a href="/">Home</a> | 
+			<a href="/login">Log In</a>
+			</p>
+		<% } else { %>
+			<p>
+			<a href="/">Home</a> | 
+			<a href="/account">Account</a> | 
+			<a href="/logout">Log Out</a>
+			</p>
+		<% } %>
+		<%- body %>
+        
     </body>
 
 </html>
