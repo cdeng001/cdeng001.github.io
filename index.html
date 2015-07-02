@@ -26,7 +26,7 @@
 <!-- this script is for initializing hello-->
         <script>
             hello.init({
-                facebook: FACEBOOK_CLIENT_ID,
+                facebook: 1116902578328507,
                 windows: WINDOWS_CLIENT_ID,
                 google: GOOGLE_CLIENT_ID
             }, {redirect_uri: 'redirect.html'});
@@ -62,7 +62,11 @@
                 </button>
 
                 <button onclick="hello('facebook').login()">
-                    Faceboook Test
+                    Facebook Test
+                </button>
+                
+                <button onclick="hello('google').login()">
+                    Google+ Test
                 </button>
             </div>
         </div>
