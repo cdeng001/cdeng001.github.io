@@ -8,8 +8,8 @@ var express = require('express')
   , cookieParser = require("cookie-parser")
   , methodOverride = require('method-override');
 
-var FACEBOOK_APP_ID = 1116902578328507;
-var FACEBOOK_APP_SECRET = 797a5d073a27f079a8a2cbc016fc0fc9;
+var FACEBOOK_APP_ID = ;
+var FACEBOOK_APP_SECRET = ;
 
 
 // Passport session setup.
