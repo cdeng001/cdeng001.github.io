@@ -16,7 +16,19 @@
     <body>
 <!-- this script defines how hello will catch login informaton-->
         <script>
-            
+            function login_tw(network){
+                // Twitter instance
+                var twitter = hello(network);
+                // Login
+                twitter.login().then( function(r){
+                    // Get Profile
+                    return twitter.api('me');
+                }, log )
+                .then( function(p){
+                    // Put in page
+                    document.getElementById('login').innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ network+" as " + p.name;
+                }, log );
+            }
             
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
@@ -67,8 +79,8 @@
                     Google+ Test
                 </button>
                 
-                <button onclick="hello('twitter').login().then(successHandler, errorHandler)">
-                    Google+ Test
+                <button onclick="login_tw('twitter')">
+                    Twitter Test
                 </button>
             </div>
         </div>
