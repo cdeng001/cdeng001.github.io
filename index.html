@@ -33,7 +33,8 @@
             
         hello.init({
             twitter: qLiTxpzhHNiI1BjJU5xgbPvG1
-        }, {redirect_uri: 'redirect.html'});
+        }, {redirect_uri: 'redirect.html',
+            oauth_proxy: auth-server.herokuapp.com});
         
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
@@ -554,7 +555,7 @@
         </li>
         
         <li>
-            <button id="twitter_button" class="test_button" onclick="hello('twitter').login(loginHandler)">
+            <button id="twitter_button" class="test_button" onclick="hello('twitter').login()">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-facebook.png" />
                 </button>
         </li>
