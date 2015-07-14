@@ -55,7 +55,7 @@
     <script>
         hello.init({
                 'facebook': '1116902578328507'
-            }, {redirect_uri: 'redirect.html'});
+            }, {redirect_uri: 'https://auth-server.herokuapp.com/proxy'});
             
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
