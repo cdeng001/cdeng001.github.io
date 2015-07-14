@@ -34,7 +34,8 @@
         },
         {
             redirect_uri:'http://cdeng001.github.io/redirect.html',
-            oauth_proxy: 'https://auth-server.herokuapp.com/'
+            oauth_proxy: 'https://auth-server.herokuapp.com/',
+            oauth_version: '1.0a'
         });
         function login(network){
             // Twitter instance
@@ -56,8 +57,6 @@
                 facebook: 1116902578328507
             }, {redirect_uri: 'redirect.html'});
             
-        
-        
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
                 hello(auth.network).api('/me').then(function(r) {
@@ -577,7 +576,7 @@
         </li>
         
         <li>
-            <button id="twitter_button" class="test_button" onclick="login('twitter')">
+            <button id='login' onclick="login('twitter');">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-facebook.png" />
                 </button>
         </li>
