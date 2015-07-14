@@ -28,6 +28,14 @@
     <link href="../../../common/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <script class="pre">
+        
+        hello.init({
+            'twitter' : qLiTxpzhHNiI1BjJU5xgbPvG1
+        },
+        {
+            redirect_uri:'../redirect.html',
+            oauth_proxy: 'https://auth-server.herokuapp.com/'
+        });
         function login(network){
             // Twitter instance
             var twitter = hello(network);
@@ -48,10 +56,7 @@
                 facebook: 1116902578328507
             }, {redirect_uri: 'redirect.html'});
             
-        hello.init({
-            twitter: qLiTxpzhHNiI1BjJU5xgbPvG1
-        }, {redirect_uri: 'http://cdeng001.github.io/redirect.html',
-            oauth_proxy: 'https://auth-server.herokuapp.com/'});
+        
         
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
