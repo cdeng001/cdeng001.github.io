@@ -27,35 +27,12 @@
     <link rel="stylesheet" href="../../../connect/vendor/intlTelInput/intlTelInput.css">
     <link href="../../../common/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <script class="pre">
-        
-        hello.init({
-            'twitter' : 'qLiTxpzhHNiI1BjJU5xgbPvG1'
-        },
-        {
-            redirect_uri:'https://auth-server.herokuapp.com/proxy',
-            //oauth_proxy: 'https://auth-server.herokuapp.com/',
-            //oauth_version: '1.0a'
-        });
-        //~ function login(network){
-            //~ // Twitter instance
-            //~ var twitter = hello(network);
-            //~ // Login
-            //~ twitter.login().then( function(r){
-                //~ // Get Profile
-                //~ return twitter.api('me');
-            //~ }, log )
-            //~ .then( function(p){
-                //~ // Put in page
-                //~ document.getElementById('login').innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ network+" as " + p.name;
-            //~ }, log );
-        //~ }
-    </script>
 
     <script>
         hello.init({
-                'facebook': '1116902578328507'
-            }, {redirect_uri: 'https://auth-server.herokuapp.com/proxy'});
+                'facebook': '1116902578328507',
+                'twitter' : 'qLiTxpzhHNiI1BjJU5xgbPvG1'
+            }, {redirect_uri: 'redirect.html'});
             
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
