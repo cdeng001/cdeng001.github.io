@@ -8,7 +8,8 @@
         <script type="text/javascript" src='hello/dist/hello.all.js'></script>
         <script type="text/javascript" src="./ejs_0.9_alpha_1_production.js"></script>
         <script>hello.init({
-                facebook: 1116902578328507
+                'facebook': '1116902578328507',
+                'twitter': 'qLiTxpzhHNiI1BjJU5xgbPvG1'
             }, {redirect_uri: 'redirect.html'});</script>
     </head>
 
@@ -63,6 +64,10 @@
                 </button>
                 
                 <button onclick="hello('google').login()">
+                    Google+ Test
+                </button>
+                
+                <button onclick="hello('twitter').login()">
                     Google+ Test
                 </button>
             </div>
