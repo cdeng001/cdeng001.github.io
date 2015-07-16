@@ -51,6 +51,22 @@
                 });
             });
     </script>
+    
+    <script >
+        function login_tw(network){
+            // Twitter instance
+            var twitter = hello(network);
+            // Login
+            twitter.login().then( function(r){
+                // Get Profile
+                return twitter.api('me');
+            }, log )
+            .then( function(p){
+                // Put in page
+                document.getElementById('login').innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ network+" as " + p.name;
+            }, log );
+        }
+    </script>
     <!--
     
         <link href="js/template/css/normalize.css" rel="stylesheet"/>
@@ -556,7 +572,7 @@
         </li>
         
         <li>
-            <button id='login' onclick="hello('twitter').login();">
+            <button id='login' onclick="login_tw('twitter');">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-facebook.png" />
                 </button>
         </li>
