@@ -624,11 +624,11 @@
         <div class="weather_window">
             <div id="sample"></div>
             <script type="text/javascript">
-                var url = "http://api.openweathermap.org/data/2.5/weather?q=LosAngeles,us";
+                var url = "http://api.openweathermap.org/data/2.5/weather?q=LosAngeles,us&APPID=c2a8171f41b2d1cd8af713ac47887beb";
                 var client = new XMLHttpRequest();
                 
-                client.open("POST", url, false);
-                client.setRequestHeader("Content-Type", " x-api-key:c2a8171f41b2d1cd8af713ac47887beb");
+                client.open("GET", url, false);
+                //client.setRequestHeader("Content-Type", " x-api-key:c2a8171f41b2d1cd8af713ac47887beb");
                 client.send();
                 
                 if (client.status == 200)
