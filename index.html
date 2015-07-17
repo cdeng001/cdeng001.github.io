@@ -622,7 +622,7 @@
 
     <div class="element-holder element-holder-weather">
         <div class="weather_window">
-            <div id="sample"></div>
+            <div id="sample_weather_window"></div>
             <script type="text/javascript">
                 var url = "http://api.openweathermap.org/data/2.5/weather?q=LosAngeles,us&APPID=c2a8171f41b2d1cd8af713ac47887beb";
                 var client = new XMLHttpRequest();
@@ -632,7 +632,7 @@
                 client.send();
                 
                 if (client.status == 200)
-                    alert("The request succeeded!\n\nThe response representation was:\n\n" + client.responseText)
+                    document.getElementById("sample_weather_window").innerHTML=client.responseText;
                 else
                     alert("The request did not succeed!\n\nThe response status was: " + client.status + " " + client.statusText + ".");
                 
