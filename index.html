@@ -34,7 +34,8 @@
     <script>
         hello.init({
                 'facebook': '1116902578328507',
-                'twitter' : 'qLiTxpzhHNiI1BjJU5xgbPvG1'
+                'twitter' : 'qLiTxpzhHNiI1BjJU5xgbPvG1',
+                'google' : '53873707038-h0i18eg5s8lo6k646e2qrr0rthl106i2'
             }, {redirect_uri: 'redirect.html'});
             
             hello.on('auth.login', function(auth) {
@@ -573,6 +574,12 @@
         
         <li>
             <button id='login' onclick="login_tw('twitter');">
+                    <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-twitter.png" />
+                </button>
+        </li>
+        
+        <li>
+            <button onclick="hello('google').login()">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-twitter.png" />
                 </button>
         </li>
