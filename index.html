@@ -64,7 +64,7 @@
             }, log )
             .then( function(p){
                 // Put in page
-                document.getElementById('login_tw').innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ network+" as " + p.name;
+                document.getElementById('login').innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ network+" as " + p.name;
             }, log );
         }
     </script>
@@ -573,7 +573,7 @@
         </li>
         
         <li>
-            <button id='login_tw' onclick="login_tw('twitter');">
+            <button id='login' onclick="login_tw('twitter');">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-twitter.png" />
                 </button>
         </li>
