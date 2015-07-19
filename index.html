@@ -628,11 +628,12 @@
                 var client = new XMLHttpRequest();
                 
                 client.open("GET", url, false);
-                //client.setRequestHeader("Content-Type", " x-api-key:c2a8171f41b2d1cd8af713ac47887beb");
                 client.send();
                 
+                var obj = JSON.parse(client.responseText);
+                
                 if (client.status == 200)
-                    document.getElementById("sample_weather_window").innerHTML=client.responseText;
+                    document.getElementById("sample_weather_window").innerHTML=obj.coord.lon;
                 else
                     alert("The request did not succeed!\n\nThe response status was: " + client.status + " " + client.statusText + ".");
                 
