@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="twitter-proxy.php"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var url = "https://api.twitter.com/oauth/request_token";
+            var client = new XMLHttpRequest();
+            
+            //~ client.setRequestHeader("User-Agent",);
+            //~ client.setRequestHeader("Host",);
+            //~ client.setRequestHeader("Accept",);
+            //~ client.setRequestHeader("Authorization",);
+            
+            function test_function(){
+                $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2')
+            }
+        </script>
+        
+        <div id="test1">
+            <button id="test1_button" onclick="test_function();">twitter</button>
+            
+        </div>
+    </body>
+</html>
