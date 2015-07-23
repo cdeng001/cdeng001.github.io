@@ -2,7 +2,9 @@
 <html>
 
     <head>
+        <script src="http://code.jquery.com/jquery-1.5.js"></script>
         <script src="twitter-proxy.php"></script>
+        <script src="button_func.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -15,15 +17,12 @@
             //~ client.setRequestHeader("Accept",);
             //~ client.setRequestHeader("Authorization",);
             
-            function test_function(){
-                document.write("hello world");
-                var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2')
-                document.getElementById("test1").innerHTML=obj;
-            }
+           
         </script>
         
+        <a href="#" id="test1_button" >twitter</a>
         <div id="test1">
-            <button id="test1_button" onclick="test_function();">twitter</button>
+            
             
         </div>
     </body>
