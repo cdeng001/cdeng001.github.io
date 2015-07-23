@@ -16,7 +16,8 @@
             //~ client.setRequestHeader("Authorization",);
             
             function test_function(){
-                $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2')
+                var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2')
+                document.getElementById("test1").innerHTML=obj;
             }
         </script>
         
