@@ -14,9 +14,9 @@ $config = array(
 	'base_url' => 'https://api.twitter.com/1.1/'
 );
 // Only allow certain requests to twitter. Stop randoms using your server as a proxy.
-//~ $whitelist = array(
-	//~ 'statuses/user_timeline.json?screen_name=CalvinDeng0&count=10&include_rts=false&exclude_replies=true'=>true
-//~ );
+$whitelist = array(
+	'statuses/user_timeline.json?screen_name=CalvinDeng0&count=10&include_rts=false&exclude_replies=true'=>true
+);
 /*
 * Ok, no more config should really be needed. Yay!
 */
@@ -25,8 +25,8 @@ if(!isset($_GET['url'])){
 	die('No URL set');
 }
 $url = $_GET['url'];
-//~ if($config['use_whitelist'] && !isset($whitelist[$url])){
-	//~ die('URL is not authorised');
+if($config['use_whitelist'] && !isset($whitelist[$url])){
+	die('URL is not authorised');
 }
 // Figure out the URL parmaters
 $url_parts = parse_url($url);
