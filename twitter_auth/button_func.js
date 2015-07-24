@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     //attach a jQuery live event to the button
-    $('#test2_button').live('click', function(){
+    $('test2_button').live('click', function(){
 		document.write("hello world");
 		//~ var url = '/twitter-proxy2.php');
         //~ $.getJSON(url, function(data) {
