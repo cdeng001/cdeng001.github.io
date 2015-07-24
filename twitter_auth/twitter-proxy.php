@@ -15,7 +15,7 @@ $config = array(
 );
 // Only allow certain requests to twitter. Stop randoms using your server as a proxy.
 $whitelist = array(
-	'statuses/user_timeline.json?screen_name=MikeRogers0&count=10&include_rts=false&exclude_replies=true'=>true
+	'statuses/user_timeline.json?screen_name=CalvinDeng0&count=10&include_rts=false&exclude_replies=true'=>true
 );
 /*
 * Ok, no more config should really be needed. Yay!
@@ -55,6 +55,7 @@ function buildAuthorizationHeader($oauth) {
 }
 // Set up the oauth Authorization array
 $oauth = array(
+	'oauth_callback'=> "http%3A%2F%2Flocalhost%2Fsign-in-with-twitter%2F",
 	'oauth_consumer_key' => $config['consumer_key'],
 	'oauth_nonce' => time(),
 	'oauth_signature_method' => 'HMAC-SHA1',
