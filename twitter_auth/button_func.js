@@ -17,13 +17,13 @@ $(document).ready(function(){
         document.write("hello world");
     }
     
-    $('#test2_button').live('click', function(){
-        document.write("hello world");
+    //~ $('#test2_button').live('click', function(){
+        //~ document.write("hello world");
         //~ var url = '/twitter-proxy2.php');
         //~ $.getJSON(url, function(data) {
             //~ alert(data); //uncomment this for debug
             //~ //alert (data.item1+" "+data.item2+" "+data.item3); //further debug
             //~ $('#test1').html("<p>hello world</p>");
-        });
+        //~ });
 });
 
