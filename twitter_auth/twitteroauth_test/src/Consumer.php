@@ -8,11 +8,11 @@ namespace Abraham\TwitterOAuth;
 class Consumer
 {
     /** @var string  */
-    public $key = 'qLiTxpzhHNiI1BjJU5xgbPvG1';
+    public $key;
     /** @var string  */
-    public $secret = 's7lDfWj3gBO5v6j8eVpDScr7UrqZCVbLAaxjbGrZanlP7TCCTm';
+    public $secret;
     /** @var string|null  */
-    public $callbackUrl = 'http://cdeng001.github.io/twitteroauth/callback.php';
+    public $callbackUrl;
 
     /**
      * @param string $key
