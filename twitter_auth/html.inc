@@ -27,7 +27,7 @@
       <?php } ?>
     </div>
     <?php if (isset($status_text)) { ?>
-      <?php echo '<h3>'.$status_text.'</h3>'; ?>
+      <?php echo $status_text; ?>
     <?php } ?>
     <p>
       <pre>
