@@ -1,5 +1,5 @@
 <?php
-    require "twitteroauth/twitteroauth-0.5.3/autoload.php";
+    require "twitteroauth_test/autoload.php";
     use Abraham\TwitterOAuth\TwitterOAuth;
     
     define('CONSUMER_KEY', 'qLiTxpzhHNiI1BjJU5xgbPvG1');
