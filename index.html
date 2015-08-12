@@ -588,13 +588,13 @@
         
         <script>
 		var object = {};
-        document.getElementById("googleButton").onclick = hello.login('google',object,(function() {
-							alert('You are signed in to google');
-						}));
-		alert("ssss");
+        document.getElementById("googleButton").onclick = hello('facebook').logout().then(function() {
+													alert('Signed out');
+												}, function(e) {
+													alert('Signed out error: ' + e.error.message);
+												});
 		var gp = hello('google').getAuthResponse();
 		delete window.alert;
-		alert(gp);
         </script>
         <li>
             <button id="googleButton" >
