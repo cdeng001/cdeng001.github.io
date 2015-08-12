@@ -586,8 +586,18 @@
         </form>
         </li>
         
+        <script>
+		var object = {};
+        document.getElementById("googleButton").onclick = hello.login('google',object,(function() {
+							alert('You are signed in to google');
+						}));
+		alert("ssss");
+		var gp = hello('google').getAuthResponse();
+		delete window.alert;
+		alert(gp);
+        </script>
         <li>
-            <button onclick="hello('google').login()">
+            <button id="googleButton" >
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-gp.png" />
                 </button>
         </li>
