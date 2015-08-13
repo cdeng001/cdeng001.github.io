@@ -588,11 +588,13 @@
         
         <script>
 		var object = {};
-        document.getElementById("googleButton").onclick = "hello('google').login('google',function() { alert('You are signed in to google');}, function(e) {alert('Signin error: ' + e.error.message); });"
+        //document.getElementById("googleButton").onclick = "'google',function() { alert('You are signed in to google');}, function(e) {alert('Signin error: ' + e.error.message); });"
 		delete window.alert;
+		var gp = hello('google').getAuthResponse();
+		alert(online(gp) ? 'Signed' : 'Not signed');
         </script>
         <li>
-            <button id="googleButton" >
+            <button id="googleButton" onclick="hello('google').login()">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-gp.png" />
                 </button>
         </li>
