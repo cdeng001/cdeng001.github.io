@@ -588,15 +588,11 @@
         
         <script>
 		var object = {};
-        //document.getElementById("googleButton").onclick = 
+        document.getElementById("googleButton").onclick = "hello('google').login().then(function() { alert('You are signed in to google');}, function(e) {alert('Signin error: ' + e.error.message); });"
 		delete window.alert;
         </script>
         <li>
-            <button id="googleButton" onclick="hello('google').login().then(function() {
-									alert('You are signed in to google');
-								}, function(e) {
-									alert('Signin error: ' + e.error.message);
-								});">
+            <button id="googleButton" >
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-gp.png" />
                 </button>
         </li>
