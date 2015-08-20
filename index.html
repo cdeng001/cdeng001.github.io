@@ -36,7 +36,8 @@
                 'facebook': '1116902578328507',
                 'twitter' : 'qLiTxpzhHNiI1BjJU5xgbPvG1',
                 'google' : '53873707038-h0i18eg5s8lo6k646e2qrr0rthl106i2'
-            }, {redirect_uri: 'redirect.html'});
+            }, {redirect_uri: 'redirect.html',
+				oauth_proxy: 'http://localhost:3000/oauthproxy'});
             
             hello.on('auth.login', function(auth) {
                 // Call user information, for the given network
@@ -573,7 +574,7 @@
         </li>
         
         <li>
-            <button id='logint' onclick="login_tw('twitter');">
+            <button id='logint' onclick="hello('twitter').login()">
                     <img class="cmx_portal_element_social cmx_portal_element_social_facebook" src="images/social/social-twitter.png" /> 
                 </button>
         </li>
@@ -588,11 +589,9 @@
         
         <script>
 		var object = {};
-		document.getElementById("googleButton").onclick = hello.login('google',object,(function() {
-							alert('You are signed in to google');
-						}));
+		//document.getElementById("googleButton").onclick = hello.login('google',object,(function() {alert('You are signed in to google');}));
 		delete window.alert;
-		var gp = hello('google').getAuthResponse();
+		//var gp = hello('google').getAuthResponse();
 		//alert(online(gp) ? 'Signed' : 'Not signed');
         </script>
         <li>
