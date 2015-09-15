@@ -4,14 +4,95 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <title>
         calvin test page
     </title>
+    
+    <style>
+         body
+         {
+            background: url(http://www.pptbackgrounds.net/uploads/metal-gears-powerpoint-backgrounds.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .btn{
+            margin-left: 10px;
+            background: black;
+            color: grey;
+            border: none;
+        }
+        .btn:focus,.btn:active, .btn:active:focus {
+           outline: none;
+        }
+      </style>
+
 </head>
 
 <body id="body" >
-    
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Drop 1
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Opt 1</a></li>
+                  <li><a href="#">Opt 2</a></li>
+                  <li><a href="#">Opt 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <button type="button" class="btn navbar-btn" data-toggle="modal" data-target="#signModal">
+                  <span class="glyphicon glyphicon-user"></span> Sign Up
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn navbar-btn" data-toggle="modal" data-target="#loginModal">
+                  <span class="glyphicon glyphicon-log-in"></span> Login
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Modal -->
+    <div id="signModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+        </div>
+            <div class="modal-body">
+            <p>Some text in the modal.</p>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
 
 </html>
 
