@@ -8,33 +8,34 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title>
-        calvin test page
+        Editor Page
     </title>
     
     <style>
-         body
-         {
-            background: url(http://www.pptbackgrounds.net/uploads/metal-gears-powerpoint-backgrounds.jpg) no-repeat center center fixed;
-            background-size: cover;
-        }
-        .btn{
-            margin-left: 10px;
-            background: black;
-            color: grey;
-            border: none;
-        }
-        .btn:focus,.btn:active, .btn:active:focus {
-           outline: none;
-        }
-      </style>
+         
+    </style>
 
 </head>
 
 <body id="body" >
-     <div id="display">
-        <p>editor page</p>
-     </div>
 
-    <div id="content">
-    </div>
+    <form id="gridInit" action="">
+        <div id="initOpt">
+            <input type="text" id="grid_height_input" name="grid_height" placeholder="Grid Height"/>
+            <input type="text" id="grid_width_input" name="grid_width" placeholder="Grid Width"/>
+        </div>
+        <button type="submit" name="submit_gridInit" >
+            <img src="" />
+        </button>
+    </form>
+
+    <form id="saveTemplate">
+        <div id="display">
+            <p>editor page</p>
+        </div>
+
+        <div id="content">
+        </div>
+    </form>
+    
 </html>
