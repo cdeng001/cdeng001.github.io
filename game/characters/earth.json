@@ -1,6 +1,6 @@
 var earthJSON = {
     'name' : 'earth',
-    'boardAvatar' : '/images/earth.jpg',
+    'boardAvatar' : '/images/earth_board.png',
     'menuAvatar' : '',
     'health' : '1',
     'mana' : '1',

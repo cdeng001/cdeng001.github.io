@@ -3,28 +3,115 @@
   <head>
     <title>Map</title>
     <style>
-        div{
+        #screen{ 
+            background: black;
+            padding:10px;
+            
+            overflow: auto
+        }
+        #character_select{
             background: grey;
+            height: 50%;
+            width: 98%;
+            overflow: hidden;
+        }
+        #team_area{
+            background: silver;
+            height: 40%;
+            width: 98%;
+            overflow: hidden;
+        }
+        #home_team{
+            background: lightblue;
+            width: 75%;
+            height: 45%;
+            margin: 0 auto;
+            position: relative;
+            overflow: auto;
+        }
+        #enemy_team{
+            background: tomato;
+            width: 75%;
+            height: 45%;
+            margin: 0 auto;
+            position: relative;
+            overflow: auto;
+        }
+        .team_name{
+            float: right;
+        }
+        .slot{
+            vertical-align: middle;
+        }
+        .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .title{
+            text-align: center;
+        }
+        .char_tile{
+            padding: 5px;
+            background: black;
+            height: 50px;
+            width: 50px;
+            float: left;
+        }
+        .char_tile:hover{
+            background: white;
         }
     </style>
   </head>
 
   <body>
-    <div id="character_select"></div>
-    <div id="team_area">
-        <div id="home_team"><img id="slot"></img></div>
-        <div id="enemy_team"></div>
+    <div id="screen">
+        <div id="character_select">
+            <p id="character_select_title" class="title">CHARACTERS</p>
+        </div>
+        <div id="team_area">
+            <div id="home_team">
+                <span class="helper"></span>
+                <img class="slot"></img>
+                <p class="team_name">Team 1</p>
+            </div>
+            <div id="enemy_team">
+                <span class="helper"></span>
+                <img class="slot"></img>
+                <p class="team_name">Team 2</p>
+            </div>
+        </div>
     </div>
+    <button id="start_game" disabled hidden></button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script src = "./characters/earth.json"></script>
+    <script src = "./characters/all.json"></script>
+    <script src="./node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
     <script>
         $(function(){
-             $(document).ready(function(e) {
-                     $('#slot').attr('src', "./"+earthJSON.boardAvatar);
-               });
+            var socket = io.connect();
+            $(document).ready(function(e) {
+                    $('.slot').attr('src', allJSON.characters[0].boardAvatar);
+                    
+                    character_list = allJSON.characters;
+                    for(i=0; i<character_list.length; i++){
+                        $('#character_select').append('<div class="char_tile" val="'+character_list[i].name+'"><img src="'+character_list[i].boardAvatar+'"></img></div>');
+                    }
+                     
+                    $('.char_tile').click(function(){
+                        console.log($(this).attr('val'));
+                        socket.emit('submit_team', $(this).attr('val'));
+                    });
+            });
         });
         
+        socket.on('update_home_team', function(){
+            
+        });
+        
+        socket.on('update_enemy_team', function(){
+            
+        });
     </script>
   </body>
 </html>

@@ -1,0 +1,67 @@
+var allJSON = {
+    "characters" : [
+        {
+            "name" : "earth",
+            "boardAvatar" : "/images/earth_board.png",
+            "menuAvatar" : "",
+            "health" : "1",
+            "mana" : "1",
+            "attack" : "1",
+            "defense" : "1",
+            "speed" : "1",
+            "range" : "1",
+            "rangePattern" : [],
+            "actives" : [],
+            "passives" : [],
+            "attributes" : []
+        },
+
+        {
+            "name" : "fire",
+            "boardAvatar" : "/images/fire_board.png",
+            "menuAvatar" : "",
+            "health" : "1",
+            "mana" : "1",
+            "attack" : "1",
+            "defense" : "1",
+            "speed" : "1",
+            "range" : "1",
+            "rangePattern" : [],
+            "actives" : [],
+            "passives" : [],
+            "attributes" : []
+        },
+
+        {
+            "name" : "wind",
+            "boardAvatar" : "/images/wind_board.png",
+            "menuAvatar" : "",
+            "health" : "1",
+            "mana" : "1",
+            "attack" : "1",
+            "defense" : "1",
+            "speed" : "1",
+            "range" : "1",
+            "rangePattern" : [],
+            "actives" : [],
+            "passives" : [],
+            "attributes" : []
+        },
+
+        {
+            "name" : "water",
+            "boardAvatar" : "/images/water_board.png",
+            "menuAvatar" : "",
+            "health" : "1",
+            "mana" : "1",
+            "attack" : "1",
+            "defense" : "1",
+            "speed" : "1",
+            "range" : "1",
+            "rangePattern" : [],
+            "actives" : [],
+            "passives" : [],
+            "attributes" : []
+        }
+    ]
+}
