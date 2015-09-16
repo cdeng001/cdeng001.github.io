@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Map</title>
+    <style>
+        
+    </style>
+  </head>
+
+  <body>
+    <div id="character_select"></div>
+    <div id="team_area">
+        <div id="home_team"></div>
+        <div id="enemy_team"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $.getJSON( "characters/earth.json" , function( result ){
+                console.log(result);
+                alert(result.name);
+            });
+        });
+        
+    </script>
+  </body>
+</html>

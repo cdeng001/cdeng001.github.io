@@ -1,0 +1,15 @@
+{
+    'name' : 'earth',
+    'board-avatar' : '/images/earth.jpg',
+    'menu-avatar' : '',
+    'health' : '1',
+    'mana' : '1',
+    'attack' : '1',
+    'defense' : '1',
+    'speed' : '1',
+    'range' : '1',
+    'range-pattern' : [],
+    'actives' : [],
+    'passives' : [],
+    'attributes' : []
+}
