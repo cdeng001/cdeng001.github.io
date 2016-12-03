@@ -1,0 +1,41 @@
+<CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <div id="game"></div>
+
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/crafty-min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="js/objects/assets.js"></script>
+    <script src="js/objects/units.js"></script>
+    <script src="js/objects/enemy.js"></script>
+    <script src="js/objects/ui.js"></script>
+    <script src="js/objects/timer.js"></script>
+
+    <script src="js/scenes/TitleScene.js"></script>
+    <script src="js/scenes/LoginScene.js"></script>
+    <script src="js/scenes/MainMenuScene.js"></script>
+    <script src="js/scenes/DungeonListScene.js"></script>
+    <script src="js/scenes/ShopScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/ScoreScene.js"></script>
+
+    <script src="js/game.js"></script>
+
+    <script type="text/javascript">
+        var game = new Game();
+        game.init();
+        var elem = document.getElementById("game");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        }
+    </script>
+</body>
+</html>
+

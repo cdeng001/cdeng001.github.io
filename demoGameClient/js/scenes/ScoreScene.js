@@ -1,0 +1,4 @@
+function onScoreSceneInit(){}
+
+function onScoreSceneExit(){}
+
