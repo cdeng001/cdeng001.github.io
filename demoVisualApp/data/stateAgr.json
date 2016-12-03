@@ -1,0 +1,297 @@
+{
+    "": {
+        "total_streams": 63370271,
+        "total_customers": 4156389,
+        "population": 0
+    },
+    "NY": {
+        "total_streams": 24938351,
+        "total_customers": 1736369,
+        "population": 19795791
+    },
+    "PR": {
+        "total_streams": 315266,
+        "total_customers": 16099,
+        "population": 3474182
+    },
+    "VI": {
+        "total_streams": 4739,
+        "total_customers": 368,
+        "population": 0
+    },
+    "MA": {
+        "total_streams": 3657381,
+        "total_customers": 178144,
+        "population": 6794422
+    },
+    "RI": {
+        "total_streams": 406234,
+        "total_customers": 19329,
+        "population": 1056298
+    },
+    "NH": {
+        "total_streams": 564043,
+        "total_customers": 27526,
+        "population": 1330608
+    },
+    "ME": {
+        "total_streams": 454126,
+        "total_customers": 24188,
+        "population": 1329328
+    },
+    "VT": {
+        "total_streams": 215611,
+        "total_customers": 12557,
+        "population": 626042
+    },
+    "CT": {
+        "total_streams": 1377468,
+        "total_customers": 70046,
+        "population": 3590886
+    },
+    "NJ": {
+        "total_streams": 3828865,
+        "total_customers": 170794,
+        "population": 8958013
+    },
+    "AE": {
+        "total_streams": 89628,
+        "total_customers": 5333,
+        "population": 0
+    },
+    "PA": {
+        "total_streams": 4705777,
+        "total_customers": 216997,
+        "population": 12802503
+    },
+    "DE": {
+        "total_streams": 267352,
+        "total_customers": 13143,
+        "population": 945934
+    },
+    "DC": {
+        "total_streams": 603278,
+        "total_customers": 36273,
+        "population": 672228
+    },
+    "VA": {
+        "total_streams": 3344760,
+        "total_customers": 160122,
+        "population": 8382993
+    },
+    "MD": {
+        "total_streams": 2255240,
+        "total_customers": 104478,
+        "population": 6006401
+    },
+    "WV": {
+        "total_streams": 338483,
+        "total_customers": 17179,
+        "population": 1844128
+    },
+    "NC": {
+        "total_streams": 2772370,
+        "total_customers": 144366,
+        "population": 10042802
+    },
+    "SC": {
+        "total_streams": 1091121,
+        "total_customers": 56579,
+        "population": 4896146
+    },
+    "GA": {
+        "total_streams": 3657749,
+        "total_customers": 167403,
+        "population": 10214860
+    },
+    "FL": {
+        "total_streams": 6787678,
+        "total_customers": 326156,
+        "population": 20271272
+    },
+    "AA": {
+        "total_streams": 3738,
+        "total_customers": 169,
+        "population": 0
+    },
+    "AL": {
+        "total_streams": 1035674,
+        "total_customers": 54316,
+        "population": 4858979
+    },
+    "TN": {
+        "total_streams": 2184896,
+        "total_customers": 101104,
+        "population": 6600299
+    },
+    "MS": {
+        "total_streams": 409634,
+        "total_customers": 23676,
+        "population": 2992333
+    },
+    "KY": {
+        "total_streams": 1185339,
+        "total_customers": 57523,
+        "population": 4425092
+    },
+    "OH": {
+        "total_streams": 4118499,
+        "total_customers": 188392,
+        "population": 11613423
+    },
+    "IN": {
+        "total_streams": 2190282,
+        "total_customers": 98566,
+        "population": 6619680
+    },
+    "MI": {
+        "total_streams": 3421240,
+        "total_customers": 154860,
+        "population": 9922576
+    },
+    "IA": {
+        "total_streams": 1041219,
+        "total_customers": 54917,
+        "population": 3123899
+    },
+    "WI": {
+        "total_streams": 1876341,
+        "total_customers": 92286,
+        "population": 5771337
+    },
+    "MN": {
+        "total_streams": 2655408,
+        "total_customers": 119260,
+        "population": 5489594
+    },
+    "ND": {
+        "total_streams": 278399,
+        "total_customers": 13996,
+        "population": 756927
+    },
+    "SD": {
+        "total_streams": 224362,
+        "total_customers": 11728,
+        "population": 858469
+    },
+    "MT": {
+        "total_streams": 315592,
+        "total_customers": 18010,
+        "population": 1032949
+    },
+    "IL": {
+        "total_streams": 6694753,
+        "total_customers": 295978,
+        "population": 12859995
+    },
+    "MO": {
+        "total_streams": 2198076,
+        "total_customers": 104348,
+        "population": 6083672
+    },
+    "KS": {
+        "total_streams": 1220101,
+        "total_customers": 57226,
+        "population": 2911641
+    },
+    "NE": {
+        "total_streams": 627582,
+        "total_customers": 33411,
+        "population": 1896190
+    },
+    "LA": {
+        "total_streams": 999937,
+        "total_customers": 54566,
+        "population": 4670724
+    },
+    "AR": {
+        "total_streams": 676599,
+        "total_customers": 34178,
+        "population": 2978204
+    },
+    "Ar": {
+        "total_streams": 24746,
+        "total_customers": 1132,
+        "population": 2978204
+    },
+    "OK": {
+        "total_streams": 1423143,
+        "total_customers": 62259,
+        "population": 3911338
+    },
+    "TX": {
+        "total_streams": 13068732,
+        "total_customers": 561087,
+        "population": 27469114
+    },
+    "CO": {
+        "total_streams": 3152295,
+        "total_customers": 159677,
+        "population": 5456574
+    },
+    "WY": {
+        "total_streams": 161965,
+        "total_customers": 9111,
+        "population": 586107
+    },
+    "ID": {
+        "total_streams": 726841,
+        "total_customers": 33083,
+        "population": 1654930
+    },
+    "UT": {
+        "total_streams": 2446047,
+        "total_customers": 93955,
+        "population": 2995919
+    },
+    "AZ": {
+        "total_streams": 3180226,
+        "total_customers": 133096,
+        "population": 6828065
+    },
+    "NM": {
+        "total_streams": 595908,
+        "total_customers": 29637,
+        "population": 2085109
+    },
+    "NV": {
+        "total_streams": 1269156,
+        "total_customers": 52208,
+        "population": 2890845
+    },
+    "CA": {
+        "total_streams": 27109378,
+        "total_customers": 1091721,
+        "population": 39144818
+    },
+    "AP": {
+        "total_streams": 37850,
+        "total_customers": 2404,
+        "population": 0
+    },
+    "HI": {
+        "total_streams": 386822,
+        "total_customers": 20638,
+        "population": 1431603
+    },
+    "GU": {
+        "total_streams": 13481,
+        "total_customers": 1168,
+        "population": 0
+    },
+    "OR": {
+        "total_streams": 2240294,
+        "total_customers": 97333,
+        "population": 4028977
+    },
+    "WA": {
+        "total_streams": 4449105,
+        "total_customers": 181169,
+        "population": 7170351
+    },
+    "AK": {
+        "total_streams": 316230,
+        "total_customers": 14463,
+        "population": 738432
+    }
+}

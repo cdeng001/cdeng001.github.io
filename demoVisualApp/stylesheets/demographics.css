@@ -1,0 +1,179 @@
+.main{
+    margin-left: 62px;
+    width: 94vw;
+}
+
+.upper-row{
+    margin-top: 20px;
+}
+
+.states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+.data-section{
+    margin-bottom: 30px;
+}
+
+.page-title h2{
+    font-family: Avenir, sans-serif;
+    font-size: 41px;
+    text-anchor: middle;
+    font-weight: bold;
+    margin-left: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.info-toggle-button-row{
+    top: 30px;
+}
+
+@media only screen and (max-width: 991px){
+    .info-toggle-button-row{
+        top: 0;
+    }
+}
+
+.info-toggle-button{
+    display: inline-block;
+}
+
+.info-toggle-button:hover{
+    color: gold;
+}
+
+.info-toggle-button a{
+    color: black;
+}
+
+.info-toggle-bar:hover{
+    background-color: inherit;
+}
+
+.info-toggle-button a:hover,
+.info-toggle-button a:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.info-toggle-button-name{
+    font-family:  Avenir, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.info-toggle-bar{
+    background-color: #1a1a1a;
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+div.data-table{
+    display: inline-block;
+    height: 70%;
+    background-color: rgba(96,96,96,0);
+    padding: 10px;
+}
+
+.text-block{
+    border-radius: 10px;
+    padding: 10px;
+    width: 230px;
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hover-block{
+    border-radius: 10px;
+    padding: 10px;
+    width: 230px;
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.text-block-results{
+    top: 0;
+}
+
+.text-block-title{
+    margin: 0 !important;
+}
+
+.display-stats{
+
+}
+
+.gradient-display{
+    font-size: 0;
+}
+
+.gradient-display p{
+    font-size: small;
+    margin: 0;
+}
+
+.gradient-half{
+    width: 115px;
+    height: 30px;
+    display: inline-block;
+}
+
+.gradient-half-colored{
+    background: -webkit-linear-gradient(left, #00ff00 , grey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #00ff00, grey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #00ff00, grey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #00ff00 , grey); /* Standard syntax */
+    border-radius: 25px 0px 0px 25px;
+}
+
+.gradient-half-grey{
+    background: -webkit-linear-gradient(left, grey , black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, grey, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, grey, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, grey , black); /* Standard syntax */
+    border-radius: 0px 25px 25px 0px;
+}
+
+.coin{
+    visibility: hidden;
+}
+
+.coin-name{
+    font-size: small;
+    font-family:  Avenir sans-serif;
+
+}
+
+.gradient-max-min{
+    width: 200px;
+}
+
+.gradient-max,
+.gradient-min{
+    display: inline-block;
+}
+
+.gradient-min{
+    float: right;
+}
+
+.stateZones{
+    background-blend-mode: lighten;
+}
+
+.stateZone:hover{
+    fill: gold;
+    opacity: 0.5;
+}
+
+

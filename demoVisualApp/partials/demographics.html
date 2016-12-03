@@ -1,0 +1,17 @@
+<div class="main" ng-controller="demographicsCtrl">
+    <div class="row upper-row">
+        <div class="col-md-4 page-title"><h2>Market Discovery</h2></div>
+        <div class="col-md-8 info-toggle-button-row">
+            <mode-bar mode-list="modeList" active-mode="activeMode"></mode-bar>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">
+            <choropleth data="artistData"  active-mode="activeMode" mode-list="modeList"></choropleth>
+        </div>
+        <div class="col-md-3">
+            <stat-panel data="artistData"  active-mode="activeMode" mode-list="modeList"></stat-panel>
+        </div>
+    </div>
+</div>
