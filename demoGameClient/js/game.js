@@ -23,7 +23,7 @@ function Game(){
     //init function
     this.init = function(){
         initCrafty(this.screen_w, this.screen_h);
-        initSocket();
+        //initSocket();
     };
 
     /*private function to load assets and set up game through Crafty engine.

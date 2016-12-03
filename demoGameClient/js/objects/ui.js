@@ -1532,7 +1532,7 @@ function UIComponentInit(){
                         var damageValues = this._gameTeam.getDamage(data);
 
                         //player heal conditions
-                        var healValues = this._gameTeam.getHeal(data);
+                        //var healValues = this._gameTeam.getHeal(data);
 
                         //boss damage conditions, here boss takes 'damageValues' and mods them based on skills/buffs
 
