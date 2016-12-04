@@ -170,6 +170,7 @@
 
                     // define render function
                     function render(data){
+                        console.log(data);
                         if(data != undefined){
                             for(var zip in data){
                                 if(  !/^[0-9]+$/.test(zip)  || zip == ""){

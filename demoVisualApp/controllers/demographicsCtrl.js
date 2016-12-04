@@ -148,7 +148,7 @@
                         method: 'GET',
                         url: 'data/1013863.json'
                     }).then(function successCallback(response) {
-                        console.log(response);
+                        //console.log(response);
                         $scope.artistData = response.data ;
                     }, function errorCallback(response) {
                         console.log(reponse.text);
