@@ -49,9 +49,9 @@
                     var container = svg.append("g");
 
                     queue()
-                        .defer(d3.json, "/data/all-id.json")
-                        .defer(d3.csv, "/data/zip3.csv")
-                        .defer(d3.json, "/data/stateAgr.json")
+                        .defer(d3.json, "data/all-id.json")
+                        .defer(d3.csv, "data/zip3.csv")
+                        .defer(d3.json, "data/stateAgr.json")
                         .await(ready);
 
                     function ready(error, us, zc, sa) {
