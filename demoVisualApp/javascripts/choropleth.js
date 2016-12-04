@@ -61,7 +61,7 @@
                         var zipCodes = {};
 
                         zc.forEach(function(d) { zipCodes[d.Id] = d.Name; });
-
+                        console.log(zc);
                         var cnt = 0;
                         container.append("g").attr("class", "allZones");
 
@@ -80,7 +80,7 @@
                                 }
                                 return "cZones " + location_name + " " + d.properties.ZIP })
                             .attr("loc", function(d) {
-                                console.log(zipCodes[d.properties.ZIP])
+                                //console.log(zipCodes[d.properties.ZIP])
                                 return zipCodes[d.properties.ZIP] })
                             .attr("d", path)
                             //.style("z-index", 0)
@@ -126,6 +126,8 @@
                     }
 
                     function clicked(d){
+
+                        console.log(this.getAttribute("class") +' '+ this.getAttribute('loc'));
 
                         var x, y, k;
 
@@ -234,7 +236,7 @@
                     });
 
                     scope.$watch('data', function(newVals, oldVals) {
-                        return render(newVals);
+                        //return render(newVals);
                     });
                 }
             }
