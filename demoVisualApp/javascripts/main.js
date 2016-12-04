@@ -13,9 +13,9 @@
         //home
         $routeProvider
             .when('/home', {
-                templateUrl: 'partials/home.html',
+                templateUrl: '/partials/home.html',
                 controller: 'homeCtrl',
-                css: 'stylesheets/home.css'
+                css: '/stylesheets/home.css'
             })
             /*
             .when('/performance', {
@@ -25,9 +25,9 @@
             })
             */
             .when('/demographics', {
-                templateUrl: 'partials/demographics.html',
+                templateUrl: '/partials/demographics.html',
                 controller: 'demographicsCtrl',
-                css: 'stylesheets/demographics.css'
+                css: '/stylesheets/demographics.css'
             })
             ;
     });
