@@ -52,9 +52,10 @@
                         .defer(d3.json, "data/all-id.json")
                         .defer(d3.csv, "data/zip3.csv")
                         .defer(d3.json, "data/stateAgr.json")
+                        .defer(d3.json, "https://d3js.org/us-10m.v1.json")//this is a new resorce i found for zips
                         .await(ready);
 
-                    function ready(error, us, zc, sa) {
+                    function ready(error, us, zc, sa, newZips) {
                         if (error) throw error;
 
                         var zipCodes = {};
@@ -79,6 +80,7 @@
                                 }
                                 return "cZones " + location_name + " " + d.properties.ZIP })
                             .attr("loc", function(d) {
+                                console.log(zipCodes[d.properties.ZIP])
                                 return zipCodes[d.properties.ZIP] })
                             .attr("d", path)
                             //.style("z-index", 0)
@@ -170,14 +172,15 @@
 
                     // define render function
                     function render(data){
-                        console.log(data);
                         if(data != undefined){
                             for(var zip in data){
                                 if(  !/^[0-9]+$/.test(zip)  || zip == ""){
                                     continue;
                                 }
                                 if ($("."+zip)){
+                                    if($("."+zip)){
 
+                                    }
                                     var opac = "1.0";
                                     var value = data[zip].streams;
                                     if(value < 1){
