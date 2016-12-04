@@ -146,7 +146,7 @@
                 $scope.updateArtists = function(){
                     $http({
                         method: 'GET',
-                        url: '/api/sample/1013863'
+                        url: 'data/1013863.json'
                     }).then(function successCallback(response) {
                         $scope.artistData = response.data ;
                     }, function errorCallback(response) {
